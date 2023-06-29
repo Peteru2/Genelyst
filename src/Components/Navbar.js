@@ -20,7 +20,7 @@ const Navbar = () => {
             </h2>
 
             <div className="menu-icon" onClick={handleClick}>
-                <i className = {name ? "fag fa-times" : "fa fa-bars"}></i>
+                <i className = {name ? "fa fa-times" : "fa fa-bars"}></i>
             </div>
 
             <div className = {name ? " nav-menu active":"nav-menu"}>
