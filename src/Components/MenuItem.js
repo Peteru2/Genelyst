@@ -32,7 +32,7 @@ const MenuItem =
             },
             {
                 title : "PAYMENTS",
-                url: "/",
+                url: "/payments",
                 cName : "nav-links",
                 icon: "",
             },

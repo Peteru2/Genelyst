@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import MenuItem from "./MenuItem";
 // import { Component } from "react";
 import "./navbar.css";
@@ -28,9 +29,9 @@ const Navbar = () => {
                 return (
                           
                        <li className="nav-list" key = {index}>
-                            <a  className = {item.cName}href = {item.url}>
+                            <Link  className = {item.cName} to = {item.url}>
                                 {item.title}
-                            </a>
+                            </Link>
                             </li>
                     
                 );
@@ -39,8 +40,10 @@ const Navbar = () => {
                 <span>
                 <i class="fa fa-bell"></i>
                 </span>
-                <span>
+                <span className="span">
                 <i class="fa fa-user "></i>
+                <i class="fa fa-chevron-down "></i>
+
                 </span>
               </h2>
         </div>
