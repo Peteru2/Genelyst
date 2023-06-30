@@ -24,12 +24,12 @@ const Navbar = () => {
                 <i className = {name ? "fa fa-times" : "fa fa-bars"}></i>
             </div>
 
-            <div className = {name ? " nav-menu active":"nav-menu"}>
+            <div className = {name ? "nav-menu active":"nav-menu"}>
             {MenuItem.map((item,index) => {
                 return (
                           
                        <li className="nav-list" key = {index}>
-                            <Link  className = {item.cName} to = {item.url}>
+                            <Link  className = {item.cName}  to = {item.url}>
                                 {item.title}
                             </Link>
                             </li>

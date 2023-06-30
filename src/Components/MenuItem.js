@@ -2,7 +2,7 @@ const MenuItem =
         [
             {
                 title : "DASHBOARD",
-                url: "/",
+                url: "/Dashboard",
                 cName : "nav-links",
                 icon: "",
             },

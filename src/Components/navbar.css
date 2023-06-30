@@ -2,8 +2,16 @@
 .nav{
     background-color: white;
     margin: 0px;
+    margin-bottom: 200px;
     height: 56px;
     justify-content: center;
+    z-index: 9999;
+    transition: 0.3s ease-in-out;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    /* transform: translate(50%); */
 
 }
 
@@ -11,6 +19,7 @@
     color:rgb(57, 87, 219);
     padding: 8px 0px;
     margin-right: 9%;
+    font-size: 28px;
 }
 
 .nav-menu{
@@ -61,16 +70,17 @@ flex-direction: row;
 display: flex;
 }
  .fa-chevron-down{   
-    font-size: 18px;
-   padding-left: 2px;
+    font-size: 10px;
+   padding-left: 4px;
    margin-top: 4px;
 }
 
-@media only screen  and (max-width: 900px){
+@media only screen  and (max-width: 920px){
     .nav{
         z-index: 99;
         justify-content:flex-start;
         margin: 0;
+        /* position: fixed; */
     }
 
     .nav-menu {
@@ -87,14 +97,16 @@ display: flex;
         justify-content: center;
         padding: 80px 0 30px 0;
         margin: 0;
-        transition: 0.3s ease-in-out
+        z-index: 99;
+        transition: 0.3s ease-in-out;
+
+
     
     }
     .nav-menu.active{
         left: 0;
         opacity: 1;
         z-index: -1;
-
 
     }
     .nav-links {
@@ -105,7 +117,6 @@ display: flex;
         align-items: center;
         text-align: center;
         justify-content: center;
-
         margin: 0px;
         
     
@@ -134,7 +145,7 @@ display: flex;
     .menu-icon{
         padding-top: 10px;
         font-size: large;
-        margin-left: 75%;
+        margin-left: 78%;
         display: block;
         cursor: pointer;
         color: black;
@@ -149,6 +160,6 @@ display: flex;
     .menu-icon{
         padding-top: 10px;
         font-size: large;
-        margin-left: 68%;
+        margin-left: 71%;
     }
 }
