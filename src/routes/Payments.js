@@ -6,13 +6,13 @@ function Payments () {
         <>
     <Navbar />
 
-            <h3 className="rounded w-44 p-2 text-white  m-4 bg-blue-950" >Request Information</h3>
+            <h3 className="rounded w-44 p-2 text-white  m-4 bg-blue-500" >Request Information</h3>
 
            
 <div className="w-4/6 pl-12   bg-white rounded-xl shadow border p-8 m-6">
 
-<div className="grid grid-cols-3 gap-2">
-    <div>
+<div className="grid grid-cols-3 gap-2 border-b-2">
+    <div >
         <div>
             <h6 className="text-xs text-indigo-500"> REQUEST TYPE</h6>
             <h4 className="text-lg font-semibold text-indigo-900"> POST-CON </h4>
@@ -66,7 +66,15 @@ function Payments () {
                         <h4 className="text-lg font-semibold text-indigo-900">5-BEDROOM FLAT. </h4>
                     </div>
   </div>
+</div>
 
+
+<div class="grid grid-cols-12 gap-2">
+<div class="mt-4 col-end-12 col-span-3">
+  <button class=" bg-blue-500 hover:bg-blue-700 text-white grid grid-cols-2 gap-5 btn"><b>Action</b> <i className=" fa fa-chevron-down pt-1 px-0 text-white hover:bg-blue-800 btn "></i></button>
+</div>
+ 
+  
 </div>
 </div>
         </>
