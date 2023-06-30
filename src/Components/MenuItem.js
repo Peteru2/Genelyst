@@ -2,7 +2,7 @@ const MenuItem =
         [
             {
                 title : "DASHBOARD",
-                url: "/Dashboard",
+                url: "/",
                 cName : "nav-links",
                 icon: "",
             },
@@ -20,7 +20,7 @@ const MenuItem =
             },
             {
                 title : "REQUESTS",
-                url: "/",
+                url: "/Requests",
                 cName : "nav-links",
                 icon: "",
             },
