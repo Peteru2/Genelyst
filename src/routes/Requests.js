@@ -6,18 +6,18 @@ function Requests () {
         <>
     <Navbar />
 
-            <h3 className="rounded w-44 p-2 text-white  m-4 bg-blue-500" >Generate invoice</h3>
+            <h3 className="roundedmd: w-44 p-2 text-white  m-4 bg-blue-500" >Generate invoice</h3>
 
             <h3 className="rounded w-44 p-2  m-4 text-indigo-500" >Preview your invoice</h3>
 
            
-<section className="w-3/6   bg-white rounded-xl shadow border p-8 m-6 mb-2">
+<section className="md:w-3/6 sm:w-5/6 xs:w-5/6 bg-white rounded-xl shadow border p-8 m-6 mb-2">
 
 <div className="grid grid-cols-2 gap-8 ">
 
-    <div >
+    <div cla>
         <div className="bt-2">
-            <h6 className="text-xl text-indigo-500 fa fa-heart"> </h6>
+            <h6 className="text-xl text-indigo-500  fa fa-heart"> </h6>
         </div>
 
         <h4 className="text-gray-400 mt-4">FROM</h4>
@@ -44,7 +44,7 @@ function Requests () {
        
   </div>
 
-  <div className="col-end-6 ">  
+  <div className="col-end-6  ">  
         <div className="mb-4">
             <h6 className="text-base text-gray-400"> INVOICE</h6>
         </div>

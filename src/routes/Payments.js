@@ -9,9 +9,9 @@ function Payments () {
             <h3 className="rounded w-44 p-2 text-white  m-4 bg-blue-500" >Request Information</h3>
 
            
-<div className="w-4/6 pl-12   bg-white rounded-xl shadow border p-8 m-6">
+<div className="md:w-4/6 sm:5/6 pl-12  bg-white rounded-xl shadow border  p-8 m-6">
 
-<div className="grid grid-cols-3 gap-2 border-b-2">
+<div className="grid md:grid-cols-3 sm:grid-cols-1 gap-2 border-b-2">
     <div >
         <div>
             <h6 className="text-xs text-indigo-500"> REQUEST TYPE</h6>
@@ -69,9 +69,9 @@ function Payments () {
 </div>
 
 
-<div class="grid grid-cols-12 gap-2">
-<div class="mt-4 col-end-12 col-span-3">
-  <button class=" bg-blue-500 hover:bg-blue-700 text-white grid grid-cols-2 gap-5 btn"><b>Action</b> <i className=" fa fa-chevron-down pt-1 px-0 text-white hover:bg-blue-800 btn "></i></button>
+<div class="grid grid-cols-12  gap-2">
+<div class="mt-4 sm:col-end-9 md:col-end-12  sm:col-span-9 md:col-span-3">
+  <button class=" bg-blue-500  hover:bg-blue-700  text-white grid grid-cols-2 gap-5 btn"><b>Action</b> <i className=" fa fa-chevron-down pt-1 px-0 text-white hover:bg-blue-800 btn "></i></button>
 </div>
  
   
