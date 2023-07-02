@@ -1,14 +1,31 @@
 import "./style.css";
 import Navbar from '../Components/Navbar.js'
 
-function Payments () {
+function Schedule (){
     return(
         <>
     <Navbar />
-
-            <h3 className="rounded w-44 p-2 text-white  m-4 bg-blue-500" >Request Information</h3>
-
+    
            
+            <h3 className="rounded w-44 p-2 text-white  m-4 bg-blue-500" >Generate Invoice</h3>
+
+            <h3 className="rounded w-44 p-2  m-4 text-indigo-900" >Enter Invoice Info</h3>
+
+
+           <div>
+
+           <input
+        type="email"
+        class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Enter email" />
+      <label
+        for="exampleInputEmail1"
+        class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+        >Email address</label
+      >
+           </div>
 <div className=" sm:5/6 md:w-4/6 sm:5/6 pl-12  bg-white rounded-xl shadow border  p-8 m-6">
 
 <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-2 border-b-2">
@@ -78,7 +95,8 @@ function Payments () {
 </div>
 
 </div>
+
         </>
     );
 }
-export default Payments;
+export default Schedule;

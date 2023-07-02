@@ -26,7 +26,7 @@ const MenuItem =
             },
             {
                 title : "SCHEDULE",
-                url: "/",
+                url: "/Schedule",
                 cName : "nav-links",
                 icon: "",
             },

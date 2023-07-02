@@ -11,7 +11,7 @@ function Requests () {
             <h3 className="rounded w-44 p-1  m-4 text-indigo-500" >Preview your invoice</h3>
 
            
-<section className="md:w-3/6 sm:w-5/6 xs:w-5/6 bg-white rounded-xl shadow border p-8 m-6 mb-2">
+<section className="md:w-3/6 sm:w-5/6 xs:w-5/6 bg-white rounded-xl shadow border md:p-8 p-4 m-6   mb-2">
 
 <div className="grid grid-cols-2 gap-8 ">
 
@@ -76,11 +76,10 @@ function Requests () {
 </div>
 <div className="grid grid-cols-4 mt-4 gap-5 pb-2 border-b-2">
     <h4 className=" text-gray-400">DESCRIPTION</h4>
-    <h4 className=" text-gray-400 ">Q T Y </h4>
-    <h4 className=" text-gray-400">UNIT PRICE</h4>
-
-    <h4 className=" text-gray-40">AMOUNT</h4>
-    </div>
+    <h4 className=" text-gray-400 ml-5">Q T Y </h4>
+    <h4 className=" text-gray-400 m">UNIT PRICE</h4>
+    <h4 className=" text-gray-400 mr-10">AMOUNT</h4>
+</div>
 
     <div className="grid grid-cols-4 mt-2 gap-4 pb-1 ">
     <h4 className=" text-indigo-900 sm">2 bedroom Post-cleaning</h4>
@@ -89,8 +88,8 @@ function Requests () {
     <h4 className=" text-indigo-900 sm">NGN 50,000</h4>
     </div>
 
-    <div className="grid md:grid-cols-10 sm:grid-cols-12 ">
-            <div className="mt-2 w-6/6 md:col-end-12 sm:col-end-0">
+    <aside className="grid md:grid-cols-10 sm:grid-cols-12 ">
+            <div className="mt-2 w-6/6 md:col-end-12 sm:col-end-0 ml-0 grid ">
             
             <div className="grid w-6/6 grid-cols-2 border-t-2 py-2 md:gap-8 sm:gap-10">
                     <div className="">SUB-TOTAL</div>
@@ -98,7 +97,7 @@ function Requests () {
                     <div className="pl-4"><b>NGN 50,000</b></div>
             </div>
             <div className="grid w-6/6 grid-cols-2 border-t-2 py-2 md:gap-8 sm:gap-10">
-                    <div className="">VAT(7.5%)</div>
+                    <div className="sm:mr-4">VAT(7.5%)</div>
                     
                     <div className="pl-4"><b>NGN 2,300</b></div>
             </div>
@@ -111,7 +110,7 @@ function Requests () {
                 </div>
                
             
-    </div>
+    </aside>
 
 
 </section>
