@@ -4,6 +4,7 @@ import Dashboard from './routes/Dashboard.js';
 import Payments from "./routes/Payments.js";
 import Requests from "./routes/Requests.js";
 import Schedule from "./routes/Schedule.js";
+import * as React from 'react'
 
 function App() {
   return (

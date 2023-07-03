@@ -6,7 +6,7 @@ function Requests () {
         <>
     <Navbar />
 
-            <h3 className="roundedmd: w-44 p-2 text-white  m-4 bg-blue-500" >Generate invoice</h3>
+            <h3 className="rounded md: w-44 p-2 text-white  m-4 bg-blue-500" >Generate invoice</h3>
 
             <h3 className="rounded w-44 p-1  m-4 text-indigo-500" >Preview your invoice</h3>
 
@@ -120,6 +120,53 @@ function Requests () {
             <button className="btn rounded md:p-3 sm:p-2 bg-yellow-500 hover:bg-yellow-700 text-white">SEND TO CUSTOMER</button>
             </div>
         
+</section>
+
+
+
+<section className="bg-white md:grid md:items-center md:justify-center p-4 mt-3 ">
+    <div className="mt-3 md:w-6/6  ">
+                    <label class="block">
+                     <span class="bg-transparent p-0 after:ml-0.5 after:text-red-500 block text-black text-sm w-3/6 font-medium  ">
+                        Customer/Company
+                    </span>
+                <input type="Text" name="email" class="mt-1 px-3 py-3 bg-white  shadow-sm border-yellow-400 placeholder-slate-400  "  placeholder="Spleet Limited" />
+                </label>
+            </div>  
+
+        <aside className="md:grid md:grid-cols-2 md:w-6/6 mt-3 gap-4">
+            <div className="mt-4 ">
+                    <label class="block">
+                     <span class="bg-transparent p-0  after:ml-0.5 after:text-red-500 text-black block text-sm w-5/6 font-medium ">
+                            Email address
+                    </span>
+                <input type="email" name="email" class="mt-1 px-3 py-3 bg-white border-blue-600 shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                </label>
+            </div>
+            <div className="mt-4">
+                <label class="block">
+                <span class="bg-transparent p-0  after:ml-0.5 after:text-red-500 block text-black text-sm w-5/6 font-medium ">
+                    Phone number
+                </span>
+            <input type="text" name="email" class="mt-1 px-3 py-3 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="08102034565" />
+            </label>
+            </div>
+    </aside>
+    <div className="mt-4 md:w-6/6 ">
+                    <label class="block">
+                     <span class="bg-transparent p-0  after:ml-0.5 after:text-red-500 block text-black text-sm w-5/6 font-medium ">
+                            Home Building Address
+                    </span>
+                <input type="email" name="email" class="mt-1 px-3 py-3 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                </label>
+            </div>
+        <section className="md:w-6/6 sm:w   mt-0  md:p-0 sm:p-1 pt-4 ">
+            <div className="grid grid-cols-2 gap-4 ">
+            <button className="border-blue-600 rounded  hover:bg-blue-700 hover:text-white btn  sm:p-2 text-blue-600">GO BACK</button>
+            <button className="btn rounded  sm:p-2 bg-yellow-500 hover:bg-yellow-700 text-white">SEND TO CUSTOMER</button>
+            </div>
+        
+</section>
 </section>
         </>
     );

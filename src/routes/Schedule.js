@@ -2,100 +2,122 @@ import "./style.css";
 import Navbar from '../Components/Navbar.js'
 
 function Schedule (){
+   
     return(
         <>
     <Navbar />
-    
-           
-            <h3 className="rounded w-44 p-2 text-white  m-4 bg-blue-500" >Generate Invoice</h3>
+    <div className=" md:m-20 md:mt-6 md:mb-4">
 
-            <h3 className="rounded w-44 p-2  m-4 text-indigo-900" >Enter Invoice Info</h3>
+        <h3 className="rounded md: w-44 p-2 text-white  m-4 md:ml-12 bg-blue-500" >Generate invoice</h3>
+        <h3 className="rounded w-44 p-1  m-4 text-indigo-500 md:ml-20 mb:mb-1 md:pl-12 " >Enter invoice info</h3>
+    </div>
 
+    <div className="md:grid md:grid-cols-2 md:w-6/6  gap-6 md:m-20 mt:m-2">
 
-           <div>
+    <section className="bg-white md:grid md:items-center md:justify-center md:grid-rows-4 p-4 md:p-0 mt-3  md:mt-0 ">
+    <div className="mt-3  md:mt-0 md:w-6/6  ">
+                    <label class="block">
+                     <span class="bg-transparent p-0 after:ml-0.5 after:text-red-500 block text-black text-sm w-3/6 font-medium  ">
+                        Customer/Company
+                    </span>
+                <input type="Text" name="email" class="mt-1 px-3 py-3 bg-white  shadow-sm border border-yellow-400 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Spleet Limited" />
+                </label>
+            </div>
 
-           <input
-        type="email"
-        class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-        id="exampleInputEmail1"
-        aria-describedby="emailHelp"
-        placeholder="Enter email" />
-      <label
-        for="exampleInputEmail1"
-        class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-        >Email address</label
-      >
-           </div>
-<div className=" sm:5/6 md:w-4/6 sm:5/6 pl-12  bg-white rounded-xl shadow border  p-8 m-6">
+        <aside className="md:grid md:grid-cols-2 md:w-6/6 mt-3 md:mt-0 gap-4">
+            <div className="mt-3 md:mt-0 ">
+                    <label class="block">
+                     <span class="bg-transparent p-0  after:ml-0.5 after:text-red-500 text-black block text-sm w-5/6 font-medium ">
+                            Email address
+                    </span>
+                <input type="email" name="email" class="mt-1 px-3 py-3 bg-white border border-yellow-600 shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                </label>
+            </div>
+            <div className="mt-3">
+                <label class="block">
+                <span class="bg-transparent p-0  after:ml-0.5 after:text-red-500 block text-black text-sm w-5/6 font-medium ">
+                    Phone number
+                </span>
+            <input type="text" name="email" class="mt-1 px-3 py-3 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="08102034565" />
+            </label>
+            </div>
+    </aside>
+    <div className="mt-4  md:mt-0 md:w-6/6 ">
+                    <label class="block">
+                     <span class="bg-transparent p-0  after:ml-0.5 after:text-red-500 block text-black text-sm w-5/6 font-medium ">
+                            Home Building Address
+                    </span>
+                <input type="email" name="email" class="mt-1 px-3 py-3 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                </label>
+            </div>
+</section>
 
-<div className="grid md:grid-cols-3 sm:grid-cols-1 gap-2 border-b-2">
-    <div >
-        <div>
-            <h6 className="text-xs text-indigo-500"> REQUEST TYPE</h6>
-            <h4 className="text-lg font-semibold text-indigo-900"> POST-CON </h4>
-        </div>
+<section className="bg-white md:grid md:items-center md:justify-center p-4 mt-3 ">
+    <div className="mt-3 md:w-6/6  ">
+                    <label class="block">
+                     <span class="bg-transparent p-0 after:ml-0.5 after:text-red-500 block text-black text-sm w-3/6 font-medium  ">
+                        Customer/Company
+                    </span>
+                    <input type="Text" name="email" class="mt-1 px-3 py-3 bg-white  shadow-sm border border-yellow-400 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Spleet Limited" />
+                </label>
+            </div>  
 
-        <div className="mt-4 pt-2">
-            <h6 className="text-xs text-indigo-500"> INVOICE STATEMENT</h6>
-            <h4 className="text-xs p-2 pl-4 bg-red-100 w-24 rounded"> UNGENERATED </h4>
-        </div>
+        <aside className="md:grid md:grid-cols-2 md:w-6/6 mt-3 gap-4">
+            <div className="mt-4 ">
+                    <label class="block">
+                     <span class="bg-transparent p-0  after:ml-0.5 after:text-red-500 text-black block text-sm w-5/6 font-medium ">
+                            Email address
+                    </span>
+                <input type="email" name="email" class="mt-1 px-3 py-3 bg-white border border-blue-600 shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                </label>
+            </div>
+            <div className="mt-4">
+                <label class="block">
+                <span class="bg-transparent p-0  after:ml-0.5 after:text-red-500 block text-black text-sm w-5/6 font-medium ">
+                    Phone number
+                </span>
+            <input type="text" name="email" class="mt-1 px-3 py-3 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="08102034565" />
+            </label>
+            </div>
+    </aside>
+    <aside className="md:grid md:grid-cols-2 md:w-6/6 mt-3 gap-4">
+            <div className="mt-4 ">
+                    <label class="block">
+                     <span class="bg-transparent p-0  after:ml-0.5 after:text-red-500 text-black block text-sm w-5/6 font-medium ">
+                            Email address
+                    </span>
+                <input type="email" name="email" class="mt-1 px-3 py-3 bg-white border-blue-600 shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                </label>
+            </div>
+            <div className="mt-4">
+                <label class="block">
+                <span class="bg-transparent p-0  after:ml-0.5 after:text-red-500 block text-black text-sm w-5/6 font-medium ">
+                    Phone number
+                </span>
+            <input type="text" name="email" class="mt-1 px-3 py-3 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="08102034565" />
+            </label>
+            </div>
+    </aside>
+    <div className="mt-4 md:w-6/6 ">
+                    <label class="block">
+                     <span class="bg-transparent p-0  after:ml-0.5 after:text-red-500 block text-black text-sm w-5/6 font-medium ">
+                            Home Building Address
+                    </span>
+                <input type="email" name="email" class="mt-1 px-3 py-3 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                </label>
+            </div>
+      
+</section>
 
-        <div className="mt-4 pt-2">
-            <h6 className="text-xs text-indigo-500">LOCATION</h6>
-            <h4 className="text-lg  font-semibold text-indigo-900">8, YOVI STREET, IWAYA,ONIKE YABA. </h4>
-        </div>
-       
-       
-  </div>
-
-  <div >  
-        <div>
-            <h6 className="text-xs text-indigo-500"> CUSTOMER NAME</h6>
-            <h4 className="text-lg font-semibold text-indigo-900"> PETER-EKINS </h4>
-        </div>
-
-        <div className="mt-4 pt-2">
-            <h6 className="text-xs text-indigo-500"> REQUEST DATE</h6>
-            <h4 className="text-lg font-semibold text-indigo-900"> 06.10.2019 </h4>
-
-        </div>
-
-        <div className="mt-4 pt-2">
-            <h6 className="text-xs text-indigo-500">HOUSE-TYPE</h6>
-            <h4 className="text-lg font-semibold text-indigo-900">5-BEDROOM FLAT. </h4>
-        </div>
-  </div>
-
-  <div >  
-                <div>
-                        <h6 className="text-xs text-indigo-500"> CLEANING DATE</h6>
-                        <h4 className="text-lg font-semibold text-indigo-900"> 09.10.2019</h4>
-                    </div>
-
-                    <div className="mt-4 pt-2">
-                        <h6 className="text-xs text-indigo-500"> REQUEST TIME</h6>
-                        <h4 className="text-lg font-semibold text-indigo-900"> 8:00 A.M </h4>
-
-                    </div>
-
-                    <div className="mt-4 pt-2">
-                        <h6 className="text-xs text-indigo-500">HOUSE-TYPE</h6>
-                        <h4 className="text-lg font-semibold text-indigo-900">5-BEDROOM FLAT. </h4>
-                    </div>
-  </div>
 </div>
-
-
-<div class="grid grid-cols-12  gap-2">
-<div class="mt-4 sm:col-end-12  sm:col-span-3 md:col-end-12   md:col-span-3">
-  <button class=" bg-blue-500  hover:bg-blue-700  text-white flex grid-cols-2 gap-5 btn"><b>Action </b> <i className=" fa fa-chevron-down pt-1 px-0 text-white hover:bg-blue-800 btn "></i></button>
-</div>
- 
-  
-</div>
-
-</div>
-
+<section className="md:w-6/6 md:p-0 sm:p-1 mx-20 mt-1 md: mt-0 grid mb-4 md:grid-cols-2 ">
+    <div></div>
+            <div className="grid grid-cols-2 gap-4 md:col-span-1 ">
+            <button className="border-blue-600 rounded  hover:bg-blue-700 hover:text-white btn  sm:p-2 text-blue-600">CANCEL</button>
+            <button className="btn rounded  sm:p-2 bg-yellow-500 hover:bg-yellow-700 text-white">CREATE INVOICE</button>
+            </div>
+        
+</section>
         </>
     );
 }
